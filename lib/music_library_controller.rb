@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 require 'pry'
+=======
+
+>>>>>>> d4048c5a6e406d7f0fe2151f7eb4f0141d5221b9
 class MusicLibraryController
   
   attr_accessor
@@ -11,6 +15,7 @@ class MusicLibraryController
     self.greeting
     input = gets.strip
     case input
+<<<<<<< HEAD
       when 'list songs'
         self.list_songs
       when 'list artists'
@@ -24,6 +29,10 @@ class MusicLibraryController
       when 'play song'
         self.play_song
       when 'exit'
+=======
+      when 'exit'
+        
+>>>>>>> d4048c5a6e406d7f0fe2151f7eb4f0141d5221b9
       else
         puts "Invalid input - try again"
         call
@@ -48,6 +57,7 @@ class MusicLibraryController
   end
   
   def list_songs_by_artist
+<<<<<<< HEAD
     puts "Please enter the name of an artist:"
     input = gets.strip
     exists = Artist.find_by_name(input)
@@ -77,6 +87,14 @@ class MusicLibraryController
     if  index >= 0 && index < sorted_songs.length
       puts "Playing #{sorted_songs[index].name} by #{sorted_songs[index].artist.name}"
     end
+=======
+  end
+  
+  def list_songs_by_genre
+  end
+  
+  def play_song
+>>>>>>> d4048c5a6e406d7f0fe2151f7eb4f0141d5221b9
   end
   
   def greeting
